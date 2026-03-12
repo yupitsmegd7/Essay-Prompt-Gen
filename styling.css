@@ -1,0 +1,127 @@
+
+body{
+    background:black;
+    margin:0;
+    font-family:Arial;
+}
+
+.Outerbox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:3250px;
+    margin-top: -360px;
+}
+
+
+button.active {
+    background-color: grey;
+    color: black;
+    border: 2px solid black;
+}
+
+.Innerbox{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:antiquewhite;
+    width:620px;
+    padding:35px;
+    border-radius:10px;
+}
+
+.Title{
+    font-size:26px;
+    font-weight:bold;
+    margin: auto;
+}
+
+.hook{
+    text-align:center;
+    margin-bottom:12px;
+    margin-top: 20px;
+}
+
+.hook p{
+    margin:4px;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+.mid{
+    font-size:20px;
+    font-style:italic;
+    margin-bottom:20px;
+    margin-top:15px;
+    font-weight: bold;
+}
+
+.themes{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    width:100%;
+}
+
+.gener{
+    background:white;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.2s;
+    font-family: Arial;
+}
+
+.gener:hover{
+    background:#e6e6e6;
+    transform:scale(1.05);
+}
+#promptOutput{
+width:450px;
+height:1000px;
+margin-top:30px;
+padding:10px;
+border-radius:6px;
+border:1px solid antiquewhite;
+resize:none;
+background-color: antiquewhite;
+font-family:Arial;
+}
+
+#generateBtn{
+margin-top:35px;
+padding:20px 20px;
+border:none;
+border-radius:5px;
+background:#333;
+color:white;
+cursor:pointer;
+}
+
+#generateBtn:hover{
+background:#555;
+}
+.midd{
+    font-size:30px;
+    font-style:italic;
+    margin-top:45px;
+}
+#generatedTitle{
+    scroll-margin-top: 40px;
+}
+#toneSection{
+    scroll-margin-top: 15px;
+}
+.promptBox{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    line-height:1.6;
+    font-size:16px;
+}
