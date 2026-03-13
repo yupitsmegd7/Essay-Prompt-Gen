@@ -79,7 +79,8 @@ function createPrompt() {
 
     let prompt = `Generate 5 ${selectedTone} ${selectedFormat} writing prompts about ${selectedTheme}.
     Make them vibrant and apart from eachother.
-
+give number for each prompt
+give title and then text
 Do not include any commentary outside the prompts.
 Keep each prompt around 20-30 words
 `;
