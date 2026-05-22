@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 
 # Load .env variables
-load_dotenv()
+load_dotenv(dotenv_path=".env")
 
 appi=os.getenv("API_TOKEN")
 app = Flask(__name__)
