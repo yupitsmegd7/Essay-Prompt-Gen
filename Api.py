@@ -1,11 +1,14 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from google import genai
+import os
+from dotenv import load_dotenv
 
+appi=os.getenv("APP_TOKEN")
 app = Flask(__name__)
 CORS(app)
 
-client = genai.Client(api_key="api_key")
+client = genai.Client(api_key=appi)
 
 @app.route("/generate", methods=["POST"])
 def generate():
