@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 # Load .env variables
 load_dotenv()
 
-appi=os.getenv("APP_TOKEN")
+appi=os.getenv("API_TOKEN")
 app = Flask(__name__)
 CORS(app)
 
