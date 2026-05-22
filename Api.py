@@ -4,6 +4,9 @@ from google import genai
 import os
 from dotenv import load_dotenv
 
+# Load .env variables
+load_dotenv()
+
 appi=os.getenv("APP_TOKEN")
 app = Flask(__name__)
 CORS(app)
