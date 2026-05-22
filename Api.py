@@ -4,7 +4,7 @@ from google import genai
 import os
 from dotenv import load_dotenv
 
-# Load .env variables
+# Load .env variable
 load_dotenv(dotenv_path=".env")
 
 appi=os.getenv("API_TOKEN")
