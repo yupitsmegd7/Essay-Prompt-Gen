@@ -3,11 +3,16 @@ from flask_cors import CORS
 from google import genai
 import os
 from dotenv import load_dotenv
+from pathlib import Path
 
-# Load .env variable
-load_dotenv(dotenv_path=".env")
+# Explicit path to .env
+env_path = Path(__file__).parent / ".env"
+load_dotenv(dotenv_path=env_path)
 
-appi=os.getenv("API_TOKEN")
+appi = os.getenv("API_TOKEN")
+
+print("KEY:", appi)
+
 app = Flask(__name__)
 CORS(app)
 
@@ -23,16 +28,11 @@ def generate():
         contents=prompt
     )
 
-    result = response.text
-
-
-    return jsonify({"result": result})
-
+    return jsonify({"result": response.text})
 
 @app.route("/")
 def home():
     return "Backend is running"
-
 
 if __name__ == "__main__":
     app.run(debug=True)
